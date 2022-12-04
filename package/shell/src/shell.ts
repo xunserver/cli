@@ -15,7 +15,7 @@ const rm = (target: string | string[]) => {
     target = [target];
   }
   return exec(
-    "rm -rf" + target.map((i) => path.resolve(process.cwd(), i)).join(" ")
+    "rm -rf " + target.map((i) => path.resolve(process.cwd(), i)).join(" ")
   );
 };
 
