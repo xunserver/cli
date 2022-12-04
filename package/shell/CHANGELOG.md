@@ -1,5 +1,11 @@
 # @xunserver/shell
 
+## 0.0.4
+
+### Patch Changes
+
+- 41328bb: 调整 package 打包参数
+
 ## 0.0.3
 
 ### Patch Changes
