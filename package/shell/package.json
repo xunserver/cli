@@ -4,8 +4,8 @@
   "description": "",
   "scripts": {
     "build": "run-p build:*",
-    "build:esm": "tsc --module esnext  --outDir dist/esm ",
-    "build:lib": "tsc --module commonjs --outDir dist/lib --declaration false --declarationMap false"
+    "build:esm": "tsc --module esnext  --outDir dist/esm",
+    "build:lib": "tsc --module commonjs --outDir dist/lib"
   },
   "keywords": [],
   "type": "module",
