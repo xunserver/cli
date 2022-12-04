@@ -1,5 +1,11 @@
 # @xunserver/shell
 
+## 0.0.6
+
+### Patch Changes
+
+- 4bb0d45: 修改 rm 支持多个删除
+
 ## 0.0.5
 
 ### Patch Changes
