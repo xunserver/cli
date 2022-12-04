@@ -10,6 +10,13 @@ const cp = (from, to) => {
   return exec(`cp -rp ${from} ${to}`);
 };
 
+const rm = (target: string | string[]) => {
+  if (!Array.isArray(target)) {
+    target = [target];
+  }
+  return exec(path.resolve(process.cwd(), ...target));
+};
+
 const exec = (bin, option: ExecSyncOptions = {}) => {
   return execSync(bin, {
     cwd,
@@ -17,4 +24,4 @@ const exec = (bin, option: ExecSyncOptions = {}) => {
   });
 };
 
-export { cd, exec, cp };
+export { cd, exec, cp, rm };

@@ -40,10 +40,12 @@ jobs:
         run: pnpm changeset version
 
       - name: pnpm publish
-        run: pnpm -r run pub
+        run: |
+          pnpm -F "[HEAD]"... --changed-files-ignore-pattern=".changeset/**/*" run build
+          pnpm -F "[HEAD]"... --changed-files-ignore-pattern=".changeset/**/*" run pub
 
       - name: pnpm publish
-        run: pnpm publish -r --no-git-checks
+        run: pnpm publish -F "[HEAD]"... --changed-files-ignore-pattern=".changeset/**/*" --no-git-checks --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_TOKEN}}
 
