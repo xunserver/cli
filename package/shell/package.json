@@ -8,7 +8,6 @@
     "build:lib": "tsc --module commonjs --outDir dist/lib"
   },
   "keywords": [],
-  "type": "module",
   "author": "xunserver",
   "license": "ISC",
   "main": "./dist/lib/index.js",

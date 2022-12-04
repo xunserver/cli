@@ -14,7 +14,9 @@ const rm = (target: string | string[]) => {
   if (!Array.isArray(target)) {
     target = [target];
   }
-  return exec(path.resolve(process.cwd(), ...target));
+  return exec(
+    "rm -rf" + target.map((i) => path.resolve(process.cwd(), i)).join(" ")
+  );
 };
 
 const exec = (bin, option: ExecSyncOptions = {}) => {
