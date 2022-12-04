@@ -1,5 +1,11 @@
 # @xunserver/shell
 
+## 0.0.5
+
+### Patch Changes
+
+- ceb6847: commonjs 也生成申明文件
+
 ## 0.0.4
 
 ### Patch Changes
