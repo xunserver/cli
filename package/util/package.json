@@ -9,12 +9,12 @@
     "clean": "pnpm rimraf 'dist'"
   },
   "main": "./dist/lib/index.js",
-  "module": "./dist/es/index.js",
+  "module": "./dist/esm/index.js",
   "types": "./types/index.d.ts",
   "exports": {
     ".": {
       "types": "./types/index.d.ts",
-      "import": "./dist/es/index.js",
+      "import": "./dist/esm/index.js",
       "require": "./dist/lib/index.js"
     }
   },
