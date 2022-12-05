@@ -20,16 +20,13 @@
     "download-git-repo": "^3.0.2",
     "inquirer": "^9.1.4"
   },
-  "devDependencies": {
-    "cross-spawn": "7.0.3",
-    "tslib": "^2.4.0"
-  },
   "files": [
     "dist",
     "README.md"
   ],
   "type": "module",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "clean": "rimraf dist"
   }
 }

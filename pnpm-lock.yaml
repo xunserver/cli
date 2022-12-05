@@ -36,19 +36,14 @@ importers:
       '@xunserver/shell': 'workspace: *'
       commander: 9.4.0
       cosmiconfig: ^7.0.1
-      cross-spawn: 7.0.3
       download-git-repo: ^3.0.2
       inquirer: ^9.1.4
-      tslib: ^2.4.0
     dependencies:
       '@xunserver/shell': link:../shell
       commander: 9.4.0
       cosmiconfig: 7.1.0
       download-git-repo: 3.0.2
       inquirer: 9.1.4
-    devDependencies:
-      cross-spawn: 7.0.3
-      tslib: 2.4.1
 
   package/shell:
     specifiers: {}

@@ -5,7 +5,8 @@
   "scripts": {
     "build": "run-p build:*",
     "build:esm": "tsc --module esnext  --outDir dist/esm",
-    "build:lib": "tsc --module commonjs --outDir dist/lib"
+    "build:lib": "tsc --module commonjs --outDir dist/lib",
+    "clean": "rimraf dist"
   },
   "keywords": [],
   "author": "xunserver",
