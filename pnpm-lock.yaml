@@ -46,7 +46,10 @@ importers:
       inquirer: 9.1.4
 
   package/shell:
-    specifiers: {}
+    specifiers:
+      lodash: ^4.17.21
+    devDependencies:
+      lodash: 4.17.21
 
   package/util:
     specifiers: {}
@@ -1841,7 +1844,6 @@ packages:
 
   /lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
-    dev: false
 
   /log-symbols/5.1.0:
     resolution: {integrity: sha512-l0x2DvrW294C9uDCoQe1VSU4gf529FkSZ6leBl4TiqZH/e+0R7hSfHQBNut2mNygDgHwvYHfFLn6Oxb3VWj2rA==}

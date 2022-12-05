@@ -22,5 +22,8 @@
   "files": [
     "dist",
     "readme.md"
-  ]
+  ],
+  "devDependencies": {
+    "lodash": "^4.17.21"
+  }
 }
